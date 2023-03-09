@@ -1,7 +1,7 @@
 window.onload = function(){
     var config = {
         type: Phaser.AUTO,
-        width: 1000,
+        width: 800,
         height: 600,
         scene: {
             Scene1,
@@ -16,6 +16,7 @@ window.onload = function(){
 
     function preload ()
     {
+
     }
 
     function create ()
