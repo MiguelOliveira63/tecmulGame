@@ -16,6 +16,7 @@ window.onload = function(){
 
     function preload ()
     {
+        A TUA
     }
 
     function create ()
