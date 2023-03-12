@@ -1,29 +1,11 @@
-window.onload = function(){
-    var config = {
-        type: Phaser.AUTO,
-        width: 800,
-        height: 600,
-        scene: {
-            Scene1,
-            Scene2,
-            preload: preload,
-            create: create,
-            update: update
-        }
-    };
+/** @type {import("phaser")} */
 
-    var game = new Phaser.Game(config);
+import{LoadScene} from "./scenes/LoadScene"
+import{MenuScene} from "./scenes/MenuScene"
 
-    function preload ()
-    {
-
-    }
-
-    function create ()
-    {
-    }
-
-    function update ()
-    {
-    }
-}
+let game=new Phaser.Game({
+    width: 600,
+    height: 800,
+    scene:[ LoadScene, MenuScene
+    ]
+})
