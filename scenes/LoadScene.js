@@ -1,4 +1,5 @@
 import { CST } from "../CST";
+import {  MenuScene } from "./scenes/MenuScene";
 export class Loadscene extends Phaser.Scene{
 	constructor(){
 		super({
@@ -15,6 +16,7 @@ export class Loadscene extends Phaser.Scene{
 
 	}
 	creat(){
+		this.scene.add(CST.SCENES.MENU, MenuScene, false)
 		this.scene.start(CST.SCENES.MENU, "HELLO from load scene!");
 	}
 }
