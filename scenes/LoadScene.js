@@ -1,4 +1,4 @@
-import { CST } from "../CST";
+import { CST } from "/CST";
 import {  MenuScene } from "./scenes/MenuScene";
 export class Loadscene extends Phaser.Scene{
 	constructor(){
@@ -9,13 +9,14 @@ export class Loadscene extends Phaser.Scene{
 	}
 	init(){
 
-
+		
 	}
 	preload(){
+		//marcelo
 
 
 	}
-	creat(){
+	create(){
 		this.scene.add(CST.SCENES.MENU, MenuScene, false)
 		this.scene.start(CST.SCENES.MENU, "HELLO from load scene!");
 	}
